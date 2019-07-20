@@ -4,15 +4,17 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({ExtentITestListenerClassAdapter.class})
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter;
+
+@Listeners({ExtentITestListenerAdapter.class})
 public class AppTest {
-	@Test(groups = { "tagName", "t:another-tagName", "a:authorName", "d:deviceName" })
-	public void test1(String user, String password) {
+	@Test
+	public void test1() {
 		Assert.assertTrue(true);
 	}
 	
-	@Test(groups = { "tagName", "tag:another-tagName", "author:authorName", "device:deviceName" })
-	public void test2(String user, String password) {
+	@Test
+	public void test2() {
 		Assert.assertTrue(false);
 	}	
 }
