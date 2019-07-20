@@ -1,38 +1,20 @@
 package alex.testing;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+@Listeners({ExtentITestListenerClassAdapter.class})
+public class AppTest {
+	@Test(groups = { "tagName", "t:another-tagName", "a:authorName", "d:deviceName" })
+	public void test1(String user, String password) {
+		Assert.assertTrue(true);
+	}
+	
+	@Test(groups = { "tagName", "tag:another-tagName", "author:authorName", "device:deviceName" })
+	public void test2(String user, String password) {
+		Assert.assertTrue(false);
+	}	
 }
+
+
