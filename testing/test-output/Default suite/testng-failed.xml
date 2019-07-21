@@ -5,7 +5,10 @@
     <classes>
       <class name="demo.site.test.CamelotDemoTest">
         <methods>
-          <include name="chromeSetup"/>
+          <include name="getGamesCount"/>
+          <include name="testReportSetup"/>
+          <include name="driverTierDown"/>
+          <include name="flushResults"/>
         </methods>
       </class> <!-- demo.site.test.CamelotDemoTest -->
     </classes>
