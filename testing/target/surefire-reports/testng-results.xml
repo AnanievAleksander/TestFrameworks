@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-07-21T16:13:16Z" name="demo.site.test.CamelotDemoTest" finished-at="2019-07-21T16:13:26Z" duration-ms="9640">
+    <groups>
+    </groups>
+    <test started-at="2019-07-21T16:13:16Z" name="Command line test" finished-at="2019-07-21T16:13:26Z" duration-ms="9640">
+      <class name="demo.site.test.CamelotDemoTest">
+        <test-method is-config="true" signature="testReportSetup()[pri:0, instance:demo.site.test.CamelotDemoTest@60285225]" started-at="2019-07-21T16:13:16Z" name="testReportSetup" finished-at="2019-07-21T16:13:16Z" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportSetup -->
+        <test-method signature="siteLogIn()[pri:0, instance:demo.site.test.CamelotDemoTest@60285225]" started-at="2019-07-21T16:13:16Z" name="siteLogIn" finished-at="2019-07-21T16:13:24Z" duration-ms="8300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- siteLogIn -->
+        <test-method is-config="true" signature="flushAndQuit()[pri:0, instance:demo.site.test.CamelotDemoTest@60285225]" started-at="2019-07-21T16:13:24Z" name="flushAndQuit" finished-at="2019-07-21T16:13:26Z" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushAndQuit -->
+      </class> <!-- demo.site.test.CamelotDemoTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- demo.site.test.CamelotDemoTest -->
+</testng-results>
