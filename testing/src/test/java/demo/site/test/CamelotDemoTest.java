@@ -64,7 +64,7 @@ public class CamelotDemoTest extends ExtentTestBase {
 		WebElement element = driver.findElement(By.id("games"));
 		Collection<WebElement> allElements =  element.findElements(By.xpath("//div[@class='game']//div[@class='title']")) ;
 		System.out.println(allElements.size());
-		for (int i = 1; i < allElements.size(); i++) {
+		for (int i = 68; i < allElements.size(); i++) {
 			driver.findElement(By.xpath("//div[@id='games']//div["+i+"]")).click();
 			WaitTool.waitForElement(driver, By.xpath("//iframe[@id='iwg-game']"), 10);
 			try {
