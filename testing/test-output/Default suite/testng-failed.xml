@@ -5,8 +5,8 @@
     <classes>
       <class name="demo.site.test.CamelotDemoTest">
         <methods>
-          <include name="getGamesCount"/>
           <include name="testReportSetup"/>
+          <include name="testParent"/>
           <include name="driverTierDown"/>
           <include name="flushResults"/>
         </methods>

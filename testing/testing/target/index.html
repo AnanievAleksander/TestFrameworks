@@ -42,14 +42,6 @@
 							</a>
 						</li>
 												<li>
-							<a href="tag.html">
-							<span class="nav-icon">
-							<i class="fa fa-tag"></i>
-							</span>
-							<span class="nav-text">Tags</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -93,8 +85,8 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
 										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -103,19 +95,6 @@
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
 								</li>
-						        <li class="nav-item dropdown">
-							        <a class="nav-link b-l" data-toggle="dropdown">
-							            <span class="text-xs">
-								      		<i class="fa fa-tag"></i>
-								      		<i class="fa fa-caret-down"></i>
-								        </span>
-							        </a>
-							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">CamelotDemoSite</span></a>
-						    	        <div class="dropdown-divider"></div>
-						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
-						    	      </div>
-						        </li>
 						        <li class="nav-item lightsout"><a class="nav-link b-l" href="#"><span><i class="fa fa-desktop"></i></span></a></li>
 								<li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
 								<li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
@@ -128,30 +107,42 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
-												tags="CamelotDemoSite"
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags=""
 												devices="">
-												<span class="tt">07.21.2019 23:04:41</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Log in to demo site] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> CamelotDemoSite</span>
-												</span>
+												<span class="tt">08.12.2019 23:32:16</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Parent] started</span>
+												
+											</div>
+											<div class="st fail test l1" 
+												tags=""
+												devices="">
+												<span class="tt">08.12.2019 23:32:16</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[node] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.21.2019 23:04:48</span>&nbsp;
+													<span class="tt">08.12.2019 23:32:16</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">[Log in to demo site]</span>
+													<span class="tn">|---[node]</span>
 													
-													<span class="td">Demo site is loaded</span>
+													<span class="td">pass</span>
 												</div>
-												<div class="st pass">
-													<span class="tt">07.21.2019 23:04:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">[Log in to demo site]</span>
+												<div class="st fail">
+													<span class="tt">08.12.2019 23:32:16</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">|---[node]</span>
 													
-													<span class="td">Log in sucssesful</span>
+													<span class="td">fail</span>
+												</div>
+												<div class="st error">
+													<span class="tt">08.12.2019 23:32:16</span>&nbsp;
+													<span class="ts">error</span>&nbsp; 
+													<span class="tn">|---[node]</span>
+													
+													<span class="td">Skip</span>
 												</div>
 											</div>
 											</div>
